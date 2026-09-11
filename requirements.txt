@@ -1,0 +1,16 @@
+earthengine-api
+geemap
+pandas>=2.0
+numpy
+requests
+pytrends
+stadata
+datasets
+streamlit
+plotly
+pyyaml
+schedule
+python-dotenv
+pytest
+jinja2
+kaleido

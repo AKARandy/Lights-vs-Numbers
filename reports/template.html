@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GDP Reality Check Indonesia - {{ quarter }}</title>
+<style>
+body { font-family: Georgia, serif; margin: 2.5cm; color: #1a1a1a; }
+h1 { font-size: 22pt; margin-bottom: 0; }
+h2 { font-size: 13pt; color: #444; border-bottom: 1px solid #ccc; }
+table { border-collapse: collapse; width: 100%; font-size: 10pt; }
+th, td { border: 1px solid #bbb; padding: 4px 8px; text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+.disclaimer { font-size: 8pt; color: #666; margin-top: 2cm; }
+</style>
+</head>
+<body>
+<h1>GDP Reality Check Indonesia - {{ quarter }}</h1>
+<p>Official GDP {{ official_gdp }}% &nbsp;|&nbsp; Elec/Mfg ratio {{ ratio }}</p>
+<h2>Quarterly signals</h2>
+{{ scorecard_html }}
+<h2>Signals</h2>
+{{ signals_html }}
+<p class="disclaimer">Descriptive display of public aggregate data. All signals are
+proxies, not proof. Methodology: PLAN.MD and repository README. Draft shared with
+BPS before publication (right of reply).</p>
+</body>
+</html>

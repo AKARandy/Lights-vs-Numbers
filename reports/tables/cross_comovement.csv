@@ -1,0 +1,6 @@
+signal,n_quarters,pearson_r_observed
+Nighttime lights,29,-0.368
+Electricity,29,-0.293
+Port calls (national),26,0.105
+Port volume,26,0.378
+Consumption idx,20,0.313

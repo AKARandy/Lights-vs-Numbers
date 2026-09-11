@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# 33 MB PortWatch cache: re-fetched automatically by modules/ports.py
+data/raw/portwatch_indonesia_daily.csv
+# personal theme reference, not loaded by code
+ryoPorto.jpg
+data/st_*.log

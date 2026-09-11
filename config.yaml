@@ -1,0 +1,35 @@
+gee:
+  project: ""  # overridden by GEE_PROJECT in .env
+
+bps:
+  base_url: "https://webapi.bps.go.id/v1/api"
+  var_ids:
+    electricity: null   # fill via scripts/discover_bps_vars.py
+    manufacturing_gdp: null
+
+portwatch:
+  source: "hdx"
+  dataset: "Indonesia: Daily Port Activity Data and Shipment Estimates"
+  hdx_dataset_id: "2c0f31be-3561-41c8-acce-b868ef40c868"
+  resource_id: "a7e64ed3-14b0-4ba9-9d6a-b593ba0ab14b"
+  csv_url: "https://data.humdata.org/dataset/2c0f31be-3561-41c8-acce-b868ef40c868/resource/a7e64ed3-14b0-4ba9-9d6a-b593ba0ab14b/download/indonesia-daily-port-activity-data-and-shipment-estimates.csv"
+  raw_cache: "data/raw/portwatch_indonesia_daily.csv"
+  refresh_days: 7
+  # ALL 75 ports are processed. Spotlight only sets dashboard defaults.
+  spotlight: ["Tanjung Priok", "Surabaya", "Belawan"]
+
+trends:
+  geo: "ID"
+  timeframe: "today 5-y"
+  hl: "id-ID"
+  tz: 420
+  # stress panel REMOVED 2026-09-11: keyword lists rot as slang moves to brand
+  # names (concept drift); no validated keyword set exists. Consumption stays.
+  consumption_keywords: ["liburan", "restoran", "beli hp"]
+  retry_wait_seconds: 60
+
+# NO scoring section. No weights, no thresholds, no verdicts. Ever (PLAN.MD 15).
+
+# GDP lives in exactly one place: data/raw/official_gdp_quarterly.csv
+# (quarter, gdp_yoy, yoy_source, gdp_qoq, qoq_source, note).
+# modules/combine.py reads it via load_official(). No inline values here.
