@@ -19,6 +19,20 @@ annotated on the graphs.
 Charts built on sample data are labeled in the app, so live and sample
 series are never mixed up.
 
+## Screenshots
+
+One dot per quarter: when ports disagreed with GDP.
+
+![Scatter of quarterly port volume vs GDP growth with annotated outliers](reports/12_overlays.png)
+
+National port calls with the weakest month called out.
+
+![National port calls and shipment volume](reports/05_national.png)
+
+Top 8 ports with the hardest faller labeled.
+
+![Top 8 ports volume growth](reports/08_top8.png)
+
 ## Data analysis
 
 This is a **data analysis project** first, a dashboard second. The workflow
