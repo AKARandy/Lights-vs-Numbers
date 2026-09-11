@@ -57,7 +57,7 @@ def long_lines(df, x, cols, names):
 
 
 def mock_stamp(name):
-    st.info(f"{name}: illustrative sample data (connect a free API key for the live feed).")
+    st.info(f"{name}: illustrative sample data (live feed planned).")
 
 
 # ---------- 1. Nighttime lights ----------

@@ -13,11 +13,26 @@ annotated on the graphs.
 | Port activity, all 75 ports | IMF PortWatch via HDX | Live, no key needed |
 | Consumption searches | Google Trends | Live, no key needed |
 | Official quarterly GDP, 2016-2026 | BPS releases | Full history in `data/raw/official_gdp_quarterly.csv` |
-| Nighttime lights (VIIRS) | Google Earth Engine | Illustrative sample data until a free GEE key is added |
-| Electricity vs manufacturing | BPS WebAPI | Illustrative sample data until a free BPS key is added |
+| Nighttime lights (VIIRS) | Google Earth Engine | Sample data (live feed planned) |
+| Electricity vs manufacturing | BPS WebAPI | Sample data (live feed planned) |
 
 Charts built on sample data are labeled in the app, so live and sample
 series are never mixed up.
+
+## Data analysis
+
+This is a **data analysis project** first, a dashboard second. The workflow
+is: acquire (free APIs + official releases) -> clean and aggregate (monthly
+port activity across 75 ports, weekly search indices, quarterly GDP with
+per-row sources) -> exploratory analysis (`eda/` scripts producing 15
+figures, 12 tables and the numbered findings in `reports/FINDINGS.md`, where
+every number traces back to a table) -> present (annotated charts, no
+black-box scores). Correlation panels report observed co-movement with n
+stated, never causality, never verdicts.
+
+Tools: **Python 3.12**, **pandas**, **Plotly**, **Streamlit**, **pytest**
+(unit + dashboard smoke tests, both in CI), **GitHub Actions**, HDX
+(PortWatch), Google Trends, BPS statistical releases.
 
 ## Quickstart
 
