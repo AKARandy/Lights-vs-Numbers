@@ -4,7 +4,7 @@ Independent activity signals plotted next to official GDP. **No index, no
 verdicts, no weights.** Just numbers, charts and tables, with the story
 annotated on the graphs.
 
-![CI](https://github.com/OWNER/Lights-vs-Numbers/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/AKARandy/Lights-vs-Numbers/actions/workflows/ci.yml/badge.svg)
 
 ## What it shows
 
