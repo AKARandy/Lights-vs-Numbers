@@ -29,10 +29,4 @@ jobs:
         run: python -m pytest tests/ -q
 
       - name: Dashboard smoke test (no exceptions)
-        run: >
-          python -c "
-          from streamlit.testing.v1 import AppTest;
-          at = AppTest.from_file('dashboard/app.py', default_timeout=180);
-          at.run();
-          assert not at.exception, at.exception;
-          print('dashboard OK, exceptions:', len(at.exception))"
+        run: python -c "from streamlit.testing.v1 import AppTest; at = AppTest.from_file('dashboard/app.py', default_timeout=180); at.run(); assert not at.exception, at.exception; print('dashboard OK')"
