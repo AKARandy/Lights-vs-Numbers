@@ -1,8 +1,8 @@
-# Lights vs Numbers - GDP Reality Check Indonesia
+# Lights vs Numbers - Indonesia GDP Data Analysis
 
-Independent activity signals plotted next to official GDP. **No index, no
-verdicts, no weights.** Just numbers, charts and tables, with the story
-annotated on the graphs.
+Data analysis comparing official GDP against independent activity signals.
+**No index, no verdicts, no weights.** Just numbers, charts and tables, with
+the story annotated on the graphs.
 
 ![CI](https://github.com/AKARandy/Lights-vs-Numbers/actions/workflows/ci.yml/badge.svg)
 

@@ -1,4 +1,4 @@
-"""Streamlit dashboard: GDP Reality Check Indonesia - descriptive edition.
+"""Streamlit dashboard: Lights vs Numbers - descriptive edition.
 
 Story lives ON the graphs (annotated callouts, highlights). Minimal text.
 No indexes, no verdicts, no colors that mean good/bad. Ryo light theme.
@@ -19,9 +19,9 @@ ROOT = Path(__file__).resolve().parent.parent
 PROC = ROOT / "data" / "processed"
 RAW = ROOT / "data" / "raw"
 
-st.set_page_config(page_title="GDP Reality Check Indonesia", layout="wide")
-st.title("GDP Reality Check Indonesia")
-st.caption("Independent activity signals next to official GDP. Gaps mean no data.")
+st.set_page_config(page_title="Lights vs Numbers", layout="wide")
+st.title("Lights vs Numbers")
+st.caption("Data analysis: independent activity signals next to official GDP. Gaps mean no data.")
 
 cfg = yaml.safe_load(open(ROOT / "config.yaml"))
 MOCK_NTL = not (os.getenv("GEE_PROJECT", "").strip() or cfg.get("gee", {}).get("project"))

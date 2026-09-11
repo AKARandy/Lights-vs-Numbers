@@ -298,7 +298,7 @@ PAGE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lights vs Numbers - GDP Reality Check Indonesia</title>
+<title>Lights vs Numbers - Indonesia GDP Data Analysis</title>
 <style>
 body {{ font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; max-width: 1100px;
 margin: 0 auto; padding: 24px; background: #FFFFFF; color: #000000; }}
@@ -316,8 +316,8 @@ border-top: 1px solid #D4DCF2; padding-top: 12px; }}
 </style>
 </head>
 <body>
-<h1>GDP Reality Check Indonesia</h1>
-<p>Independent activity signals next to official GDP. Gaps mean no data.
+<h1>Lights vs Numbers</h1>
+<p>Data analysis: independent activity signals next to official GDP. Gaps mean no data.
 No index, no verdicts. Static mirror of the Streamlit dashboard, rebuilt on
 every push. <a href="https://github.com/AKARandy/Lights-vs-Numbers">Source on GitHub</a>.</p>
 {body}

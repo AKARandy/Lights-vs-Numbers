@@ -8,3 +8,4 @@ data/raw/portwatch_indonesia_daily.csv
 # personal theme reference, not loaded by code
 ryoPorto.jpg
 data/st_*.log
+public/

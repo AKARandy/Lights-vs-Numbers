@@ -1,4 +1,4 @@
-"""GDP Reality Check Indonesia - pipeline orchestration.
+"""Lights vs Numbers - pipeline orchestration.
 
 Runs the four signal modules (each isolated: a failure falls back to
 cached/mock outputs) then the descriptive join. No indexes, no verdicts.

@@ -1,4 +1,4 @@
-# FINDINGS - GDP Reality Check Indonesia (descriptive, no index)
+# FINDINGS - Lights vs Numbers (descriptive, no index)
 
 Ground: PortWatch daily 262,088 rows x 75 ports (2019-01-01 to 2026-08-28, zero
 nulls) - Trends 262 weeks x 3 keywords - NTL + electricity = labeled MOCK
